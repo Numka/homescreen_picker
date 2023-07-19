@@ -314,7 +314,7 @@ mixin _$WebviewActorState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() quizhubOption,
+    required TResult Function() plugOption,
     required TResult Function(String url) webviewOption,
     required TResult Function() noInternetOption,
   }) =>
@@ -322,7 +322,7 @@ mixin _$WebviewActorState {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? quizhubOption,
+    TResult? Function()? plugOption,
     TResult? Function(String url)? webviewOption,
     TResult? Function()? noInternetOption,
   }) =>
@@ -330,7 +330,7 @@ mixin _$WebviewActorState {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? quizhubOption,
+    TResult Function()? plugOption,
     TResult Function(String url)? webviewOption,
     TResult Function()? noInternetOption,
     required TResult orElse(),
@@ -339,7 +339,7 @@ mixin _$WebviewActorState {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(Initial value) initial,
-    required TResult Function(QuizhubOption value) quizhubOption,
+    required TResult Function(plugOption value) plugOption,
     required TResult Function(WebviewOption value) webviewOption,
     required TResult Function(NoInternetOption value) noInternetOption,
   }) =>
@@ -347,7 +347,7 @@ mixin _$WebviewActorState {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(Initial value)? initial,
-    TResult? Function(QuizhubOption value)? quizhubOption,
+    TResult? Function(plugOption value)? plugOption,
     TResult? Function(WebviewOption value)? webviewOption,
     TResult? Function(NoInternetOption value)? noInternetOption,
   }) =>
@@ -355,7 +355,7 @@ mixin _$WebviewActorState {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
-    TResult Function(QuizhubOption value)? quizhubOption,
+    TResult Function(plugOption value)? plugOption,
     TResult Function(WebviewOption value)? webviewOption,
     TResult Function(NoInternetOption value)? noInternetOption,
     required TResult orElse(),
@@ -418,7 +418,7 @@ class _$Initial implements Initial {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() quizhubOption,
+    required TResult Function() plugOption,
     required TResult Function(String url) webviewOption,
     required TResult Function() noInternetOption,
   }) {
@@ -429,7 +429,7 @@ class _$Initial implements Initial {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? quizhubOption,
+    TResult? Function()? plugOption,
     TResult? Function(String url)? webviewOption,
     TResult? Function()? noInternetOption,
   }) {
@@ -440,7 +440,7 @@ class _$Initial implements Initial {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? quizhubOption,
+    TResult Function()? plugOption,
     TResult Function(String url)? webviewOption,
     TResult Function()? noInternetOption,
     required TResult orElse(),
@@ -455,7 +455,7 @@ class _$Initial implements Initial {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(Initial value) initial,
-    required TResult Function(QuizhubOption value) quizhubOption,
+    required TResult Function(plugOption value) plugOption,
     required TResult Function(WebviewOption value) webviewOption,
     required TResult Function(NoInternetOption value) noInternetOption,
   }) {
@@ -466,7 +466,7 @@ class _$Initial implements Initial {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(Initial value)? initial,
-    TResult? Function(QuizhubOption value)? quizhubOption,
+    TResult? Function(plugOption value)? plugOption,
     TResult? Function(WebviewOption value)? webviewOption,
     TResult? Function(NoInternetOption value)? noInternetOption,
   }) {
@@ -477,7 +477,7 @@ class _$Initial implements Initial {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
-    TResult Function(QuizhubOption value)? quizhubOption,
+    TResult Function(plugOption value)? plugOption,
     TResult Function(WebviewOption value)? webviewOption,
     TResult Function(NoInternetOption value)? noInternetOption,
     required TResult orElse(),
@@ -494,35 +494,35 @@ abstract class Initial implements WebviewActorState {
 }
 
 /// @nodoc
-abstract class _$$QuizhubOptionCopyWith<$Res> {
-  factory _$$QuizhubOptionCopyWith(
-          _$QuizhubOption value, $Res Function(_$QuizhubOption) then) =
-      __$$QuizhubOptionCopyWithImpl<$Res>;
+abstract class _$$plugOptionCopyWith<$Res> {
+  factory _$$plugOptionCopyWith(
+          _$plugOption value, $Res Function(_$plugOption) then) =
+      __$$plugOptionCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$QuizhubOptionCopyWithImpl<$Res>
-    extends _$WebviewActorStateCopyWithImpl<$Res, _$QuizhubOption>
-    implements _$$QuizhubOptionCopyWith<$Res> {
-  __$$QuizhubOptionCopyWithImpl(
-      _$QuizhubOption _value, $Res Function(_$QuizhubOption) _then)
+class __$$plugOptionCopyWithImpl<$Res>
+    extends _$WebviewActorStateCopyWithImpl<$Res, _$plugOption>
+    implements _$$plugOptionCopyWith<$Res> {
+  __$$plugOptionCopyWithImpl(
+      _$plugOption _value, $Res Function(_$plugOption) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$QuizhubOption implements QuizhubOption {
-  const _$QuizhubOption();
+class _$plugOption implements plugOption {
+  const _$plugOption();
 
   @override
   String toString() {
-    return 'WebviewActorState.quizhubOption()';
+    return 'WebviewActorState.plugOption()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$QuizhubOption);
+        (other.runtimeType == runtimeType && other is _$plugOption);
   }
 
   @override
@@ -532,35 +532,35 @@ class _$QuizhubOption implements QuizhubOption {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() quizhubOption,
+    required TResult Function() plugOption,
     required TResult Function(String url) webviewOption,
     required TResult Function() noInternetOption,
   }) {
-    return quizhubOption();
+    return plugOption();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? quizhubOption,
+    TResult? Function()? plugOption,
     TResult? Function(String url)? webviewOption,
     TResult? Function()? noInternetOption,
   }) {
-    return quizhubOption?.call();
+    return plugOption?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? quizhubOption,
+    TResult Function()? plugOption,
     TResult Function(String url)? webviewOption,
     TResult Function()? noInternetOption,
     required TResult orElse(),
   }) {
-    if (quizhubOption != null) {
-      return quizhubOption();
+    if (plugOption != null) {
+      return plugOption();
     }
     return orElse();
   }
@@ -569,42 +569,42 @@ class _$QuizhubOption implements QuizhubOption {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(Initial value) initial,
-    required TResult Function(QuizhubOption value) quizhubOption,
+    required TResult Function(plugOption value) plugOption,
     required TResult Function(WebviewOption value) webviewOption,
     required TResult Function(NoInternetOption value) noInternetOption,
   }) {
-    return quizhubOption(this);
+    return plugOption(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(Initial value)? initial,
-    TResult? Function(QuizhubOption value)? quizhubOption,
+    TResult? Function(plugOption value)? plugOption,
     TResult? Function(WebviewOption value)? webviewOption,
     TResult? Function(NoInternetOption value)? noInternetOption,
   }) {
-    return quizhubOption?.call(this);
+    return plugOption?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
-    TResult Function(QuizhubOption value)? quizhubOption,
+    TResult Function(plugOption value)? plugOption,
     TResult Function(WebviewOption value)? webviewOption,
     TResult Function(NoInternetOption value)? noInternetOption,
     required TResult orElse(),
   }) {
-    if (quizhubOption != null) {
-      return quizhubOption(this);
+    if (plugOption != null) {
+      return plugOption(this);
     }
     return orElse();
   }
 }
 
-abstract class QuizhubOption implements WebviewActorState {
-  const factory QuizhubOption() = _$QuizhubOption;
+abstract class plugOption implements WebviewActorState {
+  const factory plugOption() = _$plugOption;
 }
 
 /// @nodoc
@@ -672,7 +672,7 @@ class _$WebviewOption implements WebviewOption {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() quizhubOption,
+    required TResult Function() plugOption,
     required TResult Function(String url) webviewOption,
     required TResult Function() noInternetOption,
   }) {
@@ -683,7 +683,7 @@ class _$WebviewOption implements WebviewOption {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? quizhubOption,
+    TResult? Function()? plugOption,
     TResult? Function(String url)? webviewOption,
     TResult? Function()? noInternetOption,
   }) {
@@ -694,7 +694,7 @@ class _$WebviewOption implements WebviewOption {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? quizhubOption,
+    TResult Function()? plugOption,
     TResult Function(String url)? webviewOption,
     TResult Function()? noInternetOption,
     required TResult orElse(),
@@ -709,7 +709,7 @@ class _$WebviewOption implements WebviewOption {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(Initial value) initial,
-    required TResult Function(QuizhubOption value) quizhubOption,
+    required TResult Function(plugOption value) plugOption,
     required TResult Function(WebviewOption value) webviewOption,
     required TResult Function(NoInternetOption value) noInternetOption,
   }) {
@@ -720,7 +720,7 @@ class _$WebviewOption implements WebviewOption {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(Initial value)? initial,
-    TResult? Function(QuizhubOption value)? quizhubOption,
+    TResult? Function(plugOption value)? plugOption,
     TResult? Function(WebviewOption value)? webviewOption,
     TResult? Function(NoInternetOption value)? noInternetOption,
   }) {
@@ -731,7 +731,7 @@ class _$WebviewOption implements WebviewOption {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
-    TResult Function(QuizhubOption value)? quizhubOption,
+    TResult Function(plugOption value)? plugOption,
     TResult Function(WebviewOption value)? webviewOption,
     TResult Function(NoInternetOption value)? noInternetOption,
     required TResult orElse(),
@@ -791,7 +791,7 @@ class _$NoInternetOption implements NoInternetOption {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() quizhubOption,
+    required TResult Function() plugOption,
     required TResult Function(String url) webviewOption,
     required TResult Function() noInternetOption,
   }) {
@@ -802,7 +802,7 @@ class _$NoInternetOption implements NoInternetOption {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? quizhubOption,
+    TResult? Function()? plugOption,
     TResult? Function(String url)? webviewOption,
     TResult? Function()? noInternetOption,
   }) {
@@ -813,7 +813,7 @@ class _$NoInternetOption implements NoInternetOption {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? quizhubOption,
+    TResult Function()? plugOption,
     TResult Function(String url)? webviewOption,
     TResult Function()? noInternetOption,
     required TResult orElse(),
@@ -828,7 +828,7 @@ class _$NoInternetOption implements NoInternetOption {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(Initial value) initial,
-    required TResult Function(QuizhubOption value) quizhubOption,
+    required TResult Function(plugOption value) plugOption,
     required TResult Function(WebviewOption value) webviewOption,
     required TResult Function(NoInternetOption value) noInternetOption,
   }) {
@@ -839,7 +839,7 @@ class _$NoInternetOption implements NoInternetOption {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(Initial value)? initial,
-    TResult? Function(QuizhubOption value)? quizhubOption,
+    TResult? Function(plugOption value)? plugOption,
     TResult? Function(WebviewOption value)? webviewOption,
     TResult? Function(NoInternetOption value)? noInternetOption,
   }) {
@@ -850,7 +850,7 @@ class _$NoInternetOption implements NoInternetOption {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
-    TResult Function(QuizhubOption value)? quizhubOption,
+    TResult Function(plugOption value)? plugOption,
     TResult Function(WebviewOption value)? webviewOption,
     TResult Function(NoInternetOption value)? noInternetOption,
     required TResult orElse(),

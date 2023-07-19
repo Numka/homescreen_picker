@@ -37,7 +37,7 @@ class WebviewActorBloc extends Bloc<WebviewActorEvent, WebviewActorState> {
           prefs.setString('url', link);
 
           isEmulatorCheck || link.isEmpty
-              ? emit(const WebviewActorState.quizhubOption())
+              ? emit(const WebviewActorState.plugOption())
               : emit(WebviewActorState.webviewOption(link));
         }
       }
