@@ -39,38 +39,42 @@ class HomeScreenCarousel extends StatelessWidget {
                             alignment: Alignment.bottomCenter,
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: ElevatedButton(
-                                onPressed: () {
-                                  context.read<HomescreenActorBloc>().add(HomescreenActorEvent.setWallpaper(assetPath));
-                                },
-                                style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all<Color>(Colors.orange),
-                                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                    RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(12.0),
-                                      side: const BorderSide(color: Colors.amber),
+                              child: BlocBuilder<HomescreenActorBloc, HomescreenActorState>(
+                                builder: (context, state) {
+                                  return ElevatedButton(
+                                    onPressed: state != const HomescreenActorState.initial()
+                                        ? () {}
+                                        : () {
+                                            context
+                                                .read<HomescreenActorBloc>()
+                                                .add(HomescreenActorEvent.setWallpaper(assetPath));
+                                          },
+                                    style: ButtonStyle(
+                                      backgroundColor: MaterialStateProperty.all<Color>(Colors.orange),
+                                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                        RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(12.0),
+                                          side: const BorderSide(color: Colors.amber),
+                                        ),
+                                      ),
                                     ),
-                                  ),
-                                ),
-                                child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: BlocBuilder<HomescreenActorBloc, HomescreenActorState>(
-                                    builder: (context, state) {
-                                      return state.map(
-                                        initial: (value) => const Text(
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: state.map(
+                                        initial: (_) => const Text(
                                           'Set Wallpaper',
                                           style: TextStyle(fontSize: 24),
                                         ),
-                                        settingWallpaper: (value) => const CircularProgressIndicator(
+                                        settingWallpaper: (_) => const CircularProgressIndicator(
                                           color: Colors.purple,
                                         ),
-                                        wallpaperSet: (value) => const Icon(
+                                        wallpaperSet: (_) => const Icon(
                                           Icons.done,
                                         ),
-                                      );
-                                    },
-                                  ),
-                                ),
+                                      ),
+                                    ),
+                                  );
+                                },
                               ),
                             ),
                           ),

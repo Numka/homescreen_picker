@@ -18,6 +18,8 @@ class HomescreenActorBloc extends Bloc<HomescreenActorEvent, HomescreenActorStat
       emit(const HomescreenActorState.settingWallpaper());
       await homescreenPicker.setHomescreen(event.assetPath);
       emit(const HomescreenActorState.wallpaperSet());
+      await Future.delayed(const Duration(milliseconds: 700));
+      emit(const HomescreenActorState.initial());
     });
   }
 }
