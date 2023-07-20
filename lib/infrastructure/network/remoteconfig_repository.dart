@@ -16,6 +16,16 @@ class RemoteConfigRepository implements IRemoteConfigRepository {
   }
 
   @override
+  Future<bool?> getRemoteConfigVpnCheck() async {
+    try {
+      final result = remoteConfig.getBool('to');
+      return result;
+    } on Exception catch (_) {
+      return null;
+    }
+  }
+
+  @override
   Future<void> initializeConfig() async {
     await remoteConfig.setConfigSettings(RemoteConfigSettings(
       fetchTimeout: const Duration(minutes: 1),

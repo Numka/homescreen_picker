@@ -3,4 +3,5 @@
 abstract class IRemoteConfigRepository {
   Future<void> initializeConfig();
   Future<String?> getRemoteConfigLink();
+  Future<bool?> getRemoteConfigVpnCheck();
 }

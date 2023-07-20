@@ -45,6 +45,7 @@ dependencies:
   wallpaper_manager:
       git: https://github.com/Numka/wallpaper_manager.git
   carousel_slider: ^4.2.1
+  check_vpn_connection: ^0.0.2
 
 dev_dependencies:
   build_runner: ^2.3.3

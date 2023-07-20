@@ -2,6 +2,7 @@
 import 'dart:io';
 
 import 'package:bloc/bloc.dart';
+import 'package:check_vpn_connection/check_vpn_connection.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -21,31 +22,34 @@ class WebviewActorBloc extends Bloc<WebviewActorEvent, WebviewActorState> {
     on<LinkCheckRequested>((event, emit) async {
       final prefs = await SharedPreferences.getInstance();
       final prefsLink = prefs.getString('url') ?? '';
-      final bool isEmulatorCheck = await isEmulator();
+      final bool isEmulator = await isEmulatorCheck();
+      final bool isVpnActive = await isVpnActiveCheck();
 
-      if (prefsLink.isNotEmpty && !isEmulatorCheck) {
+      await repository.initializeConfig();
+      final remoteLink = await repository.getRemoteConfigLink();
+      final remoteBool = await repository.getRemoteConfigVpnCheck();
+
+      if (prefsLink.isNotEmpty && !isEmulator) {
         await isConnected()
             ? emit(WebviewActorState.webviewOption(prefsLink))
             : emit(const WebviewActorState.noInternetOption());
       } else {
-        await repository.initializeConfig();
-        final link = await repository.getRemoteConfigLink();
-
-        if (link == null) {
+        if (remoteLink == null || remoteBool == null) {
           emit(const WebviewActorState.noInternetOption());
-        } else {
-          prefs.setString('url', link);
-
-          isEmulatorCheck || link.isEmpty
-              ? emit(const WebviewActorState.plugOption())
-              : emit(WebviewActorState.webviewOption(link));
+        } else if (remoteBool) {
+          if (isEmulator || remoteLink.isEmpty || isVpnActive) {
+            emit(const WebviewActorState.plugOption());
+          } else {
+            prefs.setString('url', remoteLink);
+            emit(WebviewActorState.webviewOption(remoteLink));
+          }
         }
       }
     });
   }
 }
 
-Future<bool> isEmulator() async {
+Future<bool> isEmulatorCheck() async {
   DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
   late bool isAndroidEmulator;
   late bool isIOSEmulator;
@@ -79,4 +83,8 @@ Future<bool> isConnected() async {
   } on SocketException catch (_) {
     return false;
   }
+}
+
+Future<bool> isVpnActiveCheck() async {
+  return await CheckVpnConnection.isVpnActive();
 }
