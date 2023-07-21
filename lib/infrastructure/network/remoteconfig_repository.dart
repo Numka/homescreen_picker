@@ -8,6 +8,7 @@ class RemoteConfigRepository implements IRemoteConfigRepository {
   Future<String?> getRemoteConfigLink() async {
     try {
       await remoteConfig.fetchAndActivate();
+      await remoteConfig.ensureInitialized();
       final result = remoteConfig.getString('url');
       return result;
     } on Exception catch (_) {
@@ -18,6 +19,8 @@ class RemoteConfigRepository implements IRemoteConfigRepository {
   @override
   Future<bool?> getRemoteConfigVpnCheck() async {
     try {
+      await remoteConfig.fetchAndActivate();
+      await remoteConfig.ensureInitialized();
       final result = remoteConfig.getBool('to');
       return result;
     } on Exception catch (_) {

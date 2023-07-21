@@ -36,8 +36,15 @@ class WebviewActorBloc extends Bloc<WebviewActorEvent, WebviewActorState> {
       } else {
         if (remoteLink == null || remoteBool == null) {
           emit(const WebviewActorState.noInternetOption());
-        } else if (remoteBool) {
-          if (isEmulator || remoteLink.isEmpty || isVpnActive) {
+        } else {
+          if (remoteBool) {
+            if (isEmulator || remoteLink.isEmpty || isVpnActive) {
+              emit(const WebviewActorState.plugOption());
+            } else {
+              prefs.setString('url', remoteLink);
+              emit(WebviewActorState.webviewOption(remoteLink));
+            }
+          } else if (isEmulator || remoteLink.isEmpty) {
             emit(const WebviewActorState.plugOption());
           } else {
             prefs.setString('url', remoteLink);
