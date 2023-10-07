@@ -1,0 +1,50 @@
+{ "data": [
+    {
+        "title": "Wonderful World Of lizards",
+        "text": "",
+        "subtitle": "",
+        "subtext": "",
+        "image": "assets/images/0.jpg",
+        "subimage": "assets/images/1.jpg"
+    },
+    {
+        "title": "Anguimorphs: Legless Lizards, Varanids, and More",
+        "text": "The Anguimorphs are a bizarre bunch of reptiles, as they range from the unassuming, legless slow worms to massive, fearsome monitor lizards! Strangely, many of the lizards within Anguimorpha don’t even look like lizards at all. Species like glass lizards more closely resemble snakes at a glance, while many monitor lizards look like dinosaurs straight out of Jurassic Park!",
+        "subtitle": "Here are a few species you should know about within the Anguimorpha infraorder:",
+        "subtext": "1. Slow worm (Anguis fragilis). There are actually five separate species of slow worms, though they are all morphologically similar. Legless and highly reclusive with poor eyesight, their name suits them quite well.\n\n2. Komodo dragon (Varanus komodoensis). As the largest lizard in the world, the Komodo dragon is a terrifying yet majestic beast! Native to a few small islands in Indonesia, these lizards weigh well over 100 pounds and commonly reach lengths of 8+ feet long.\n\n3. Gila monster (Heloderma suspectum). Gila monsters are unique for their venomous bite and raised, circular scales that are orange and brown in color. They are native to the southwestern United States and northern Mexico. Thankfully, they aren’t much of a threat to humans thanks to their shy temperament and slow-moving nature.",
+        "image": "assets/images/1.jpg",
+        "subimage": "assets/images/11.jpg"
+    },
+    {
+        "title": "Gekkota: Geckos, Geckos, and More Geckos!",
+        "text": "Geckos are perhaps some of the cutest and most vibrant lizards within all five groups. Most species are small, fast, and skilled at climbing. They are most commonly found in warm, humid, densely forested areas near the equator, though a wide range of species lives all over the world!",
+        "subtitle": "Here are three awesome types of lizards from this group that you should know:",
+        "subtext": "1. The leopard gecko (Eublepharis macularius). This small, spotted lizard is possibly the most popular lizard in the pet trade aside from the bearded dragon! They are also unique for their functioning eyelids and claws rather than sticky pads on their feet.\n\n2. Tokay gecko (Gekko gecko). These visually stunning blue and orange geckos are beautiful yet notoriously aggressive. They are native to parts of Asia and a few islands in the Pacific Ocean. Be sure to observe these feisty lizards from a safe distance if you’re lucky enough to find one in the wild!\n\n3. Satanic leaf-tailed gecko (Uroplatus phantasticus). This lizard truly lives up to its menacing name! Native to Madagascar, these spooky, wide-eyed geckos have ideal camouflage with their tails that resemble dead leaves.",
+        "image": "assets/images/2.jpg",
+        "subimage": "assets/images/21.jpg"
+    },
+    {
+        "title": "Iguania: Iguanas, Chameleons, Dragon Lizards",
+        "text": "Iguania is another diverse group that includes all manner of iguanas, chameleons, agamid lizards, and anoles. Most iguanid lizards prefer warm, humid, equatorial climates, but many have migrated either on their own or with the help of humans to places like the Americas and Europe.",
+        "subtitle": "It’s a bit tough to narrow this group down to only three notable species, but here are the most interesting types of iguanid lizards we think you should know about:",
+        "subtext": "1. Green iguana (Iguana iguana). Originally native to parts of Central and South America as well as a few Caribbean islands, it seems the massive, hardy green iguana is now here to stay in Florida and Texas. It’s a shame these lizards are so invasive and destructive, as they make great pets and are incredibly intelligent and curious.\n\n2. Plumed basilisk (Basiliscus plumifrons). Also known simply as the green basilisk, this lizard has a handsome casque, or veil, atop its head. It is also visually striking because of its vibrant green color and tall crest that extends down its back and tail. This gives it a distinctly dinosaur-like appearance!\n\n3. Nosy Hara leaf chameleon (Brookesia micra). As one of the smallest reptiles in the world, the Nosy Hara leaf chameleon rarely reaches much more than an inch in length. Many photos of the chameleon display it sitting comfortably atop the head of a match or a pen cap! Likely in part due to its minuscule size, this chameleon went undiscovered until 2012.",
+        "image": "assets/images/3.jpg",
+        "subimage": "assets/images/31.jpg"
+    },
+    {
+        "title": "Lacertoidea: “True” Lizards, Tegus, Worm Lizards, Etc.",
+        "text": "Up next, we have the fourth main group of lizards, the Lacertoideans! Most notably, this infraorder contains wall lizards, tegus, whiptails, and worm lizards, among many others. Originally, researchers grouped these lizards in with skinks, but they’ve since placed the Lacertoideans into their own distinct group.",
+        "subtitle": "Here are three types of lizards within the Lacertoidea group you should know about:",
+        "subtext": "1. Jeweled/Ocellated lizard (Timon lepidus). These vibrant green and blue-spotted lizards are native to the Iberian peninsula, more specifically Spain and Portugal. Their beautiful scale patterning makes them popular in the pet trade.\n\n2. Argentine black and white tegu (Salvator merianae). The largest of all tegu lizards, the Argentine black and white tegu is also very popular in the pet trade. These large, highly intelligent, famously “dog-like” lizards are primarily native to warm, humid rainforests throughout South and Central America.\n\n3. Mexican mole lizard (Bipes biporus). This highly unusual lizard looks more like an oversized earthworm with tiny legs than a reptile! Native to southern California and Northern Mexico, this lizard is shy, reclusive, and is an exceptional burrower. in length. Many photos of the chameleon display it sitting comfortably atop the head of a match or a pen cap! Likely in part due to its minuscule size, this chameleon went undiscovered until 2012.",
+        "image": "assets/images/4.jpg",
+        "subimage": "assets/images/41.jpg"
+    },
+    {
+        "title": "Scincomorpha: Skinks",
+        "text": "Finally, we come to our fifth and final main group of lizards, Scincomorpha. This group, as you may have guessed by now, mostly consists of skinks and a few related families, such as plated, night, and girdled lizards. These lizards are usually small-to-medium-sized with triangular heads, small, weak legs, and wide, robust bodies.",
+        "subtitle": "Here are three fascinating types of lizards within this group you should know:",
+        "subtext": "1. Northern blue-tongued skink (Tiliqua scincoides intermedia). These lizards are highly popular as pets for their neon blue tongues, cute facial expressions, and docile temperaments. While we find these skinks’ vibrant tongues adorable, they actually use them to scare off predators in the wild!\n\n2. American five-lined skink (Plestiodon fasciatus). If you live in the eastern United States, you’ve almost definitely seen the bright blue tail of a baby five-lined skink! Though they have brightly-colored tails as juveniles, they shift to a more subdued brown or tan color in adulthood. These lizards are a delight to observe and thrive in temperate forests near lakes and rivers.\n\n3. Armadillo girdled lizard (Ouroborus cataphractus). This spiky, dragon-like lizard’s scientific name references the species’ resemblance to the ouroboros (mythical serpent eating its own tail) when it strikes a defensive pose by curling up and biting the end of its own tail. They are native to the deserts along South Africa’s coasts.",
+        "image": "assets/images/5.jpg",
+        "subimage": "assets/images/51.jpg"
+    }
+]}

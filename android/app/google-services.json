@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "673147109400",
-    "project_id": "ffff12-c958a",
-    "storage_bucket": "ffff12-c958a.appspot.com"
+    "project_number": "610689387862",
+    "project_id": "gigamidefo",
+    "storage_bucket": "gigamidefo.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:673147109400:android:04fa67909a2772bed2436d",
+        "mobilesdk_app_id": "1:610689387862:android:fb887cb3dc1e5b76315af7",
         "android_client_info": {
-          "package_name": "wallpictures.fapz"
+          "package_name": "miracle.delight.fortune"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "673147109400-eqs54gl4tjicbtbnimmv4qf414dh66tg.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDCVgp24DBu1NkFE4ut7crD6vmnb8EB5fY"
+          "current_key": "AIzaSyCOXpqtdUKwNWfnLvqJw7rrtG7kHrl4c0Y"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "673147109400-eqs54gl4tjicbtbnimmv4qf414dh66tg.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
