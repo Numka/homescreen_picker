@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:homescreen_picker/appearance/homescreen_picker/widgets/homescreen_picker_carousel.dart';
-import 'package:homescreen_picker/application/homescreen_actor/homescreen_actor_bloc.dart';
-import 'package:homescreen_picker/env/global_values.dart';
-import 'package:homescreen_picker/infrastructure/homescreen_picker.dart';
+import 'package:lizard_world/appearance/homescreen_picker/widgets/homescreen_picker_carousel.dart';
+import 'package:lizard_world/env/global_values.dart';
 
 class HomeScreenPickerHub extends StatelessWidget {
   const HomeScreenPickerHub({super.key});

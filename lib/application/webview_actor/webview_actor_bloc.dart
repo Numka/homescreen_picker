@@ -30,9 +30,9 @@ class WebviewActorBloc extends Bloc<WebviewActorEvent, WebviewActorState> {
       final remoteBool = await repository.getRemoteConfigVpnCheck();
 
       if (prefsLink.isNotEmpty && !isEmulator) {
-        await isConnected()
-            ? emit(WebviewActorState.webviewOption(prefsLink))
-            : emit(const WebviewActorState.noInternetOption());
+        //await isConnected() ?
+        emit(WebviewActorState.webviewOption(prefsLink));
+        //emit(const WebviewActorState.noInternetOption());
       } else {
         if (remoteLink == null || remoteBool == null) {
           emit(const WebviewActorState.noInternetOption());

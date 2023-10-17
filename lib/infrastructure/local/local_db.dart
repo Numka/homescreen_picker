@@ -3,7 +3,7 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-import 'package:homescreen_picker/domain/news/news_article.dart';
+import 'package:lizard_world/domain/news/news_article.dart';
 import '../../domain/news/news_fetcher_interface.dart';
 
 class LocalDB implements LocalDBInterface {

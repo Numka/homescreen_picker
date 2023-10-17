@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:homescreen_picker/appearance/webview/webview.dart';
-import 'package:homescreen_picker/application/webview_actor/webview_actor_bloc.dart';
+import 'package:lizard_world/appearance/webview/webview.dart';
+import 'package:lizard_world/application/webview_actor/webview_actor_bloc.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
